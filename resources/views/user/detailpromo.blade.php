@@ -115,7 +115,8 @@
                                                     <img src="{{asset('image/' . $j->image)}}" alt="">
                                                 </div>
                                                 <div class="product_info">
-                                                    <h6 class="product_name" style="margin-top: 25%;">{{ $j->title}}</h6>
+                                                    <h6 class="product_name" style="margin-top: 15%;">{{ $j->title}}</h6>
+                                                    <h6 class="product_name" style="margin-top: 10%; color: #FFE600;">Sampai {{ $j->tanggal_berakhir}}</h6>
                                                 </div>
                                             </div>
                                         </div>

@@ -27,7 +27,7 @@
                     <div class="col">
                         <div class="main_slider_content">
                             <h1>Get up to 30% Off New Arrivals</h1>
-                            <div class="red_button shop_now_button" style="background-color: #FFE600;"><a href="#">Show More</a></div>
+                            <div class="red_button shop_now_button" style="background-color: #FFE600;"><a href="{{ url('/catalogue')}}">Show More</a></div>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                                         <div class="product_price">Sampai {{$o->tanggal_berakhir}}</div>
                                     </div>
                                 </div>
-                                <div class="red_button add_to_cart_button" style="width: 98%; margin-left: 1%;"><a href="{{ url('/detailproduct/'. $o->id)}}">Check Detail</a></div>
+                                <div class="red_button add_to_cart_button" style="width: 98%; margin-left: 1%; background-color: #FFE600;"><a href="{{ url('/detailproduct/'. $o->id)}}">Check Detail</a></div>
                             </div>
                             @endforeach
 

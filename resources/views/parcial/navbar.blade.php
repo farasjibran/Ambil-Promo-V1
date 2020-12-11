@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12 text-right">
                     <div class="logo_container">
-                        <a href="#">mall<span style="color: #FFE600;">promo</span></a>
+                        <a href="#">ambil<span style="color: #FFE600;">promo</span></a>
                     </div>
                     <nav class="navbar">
                         <ul class="navbar_menu">
