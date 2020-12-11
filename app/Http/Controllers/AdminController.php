@@ -80,4 +80,9 @@ class AdminController extends Controller
 
         return view('admin.datapopular', ['kategoribarang' => $ktbarang]);
     }
+
+    public function ViewSuggestion()
+    {
+        return view('admin.datacomment');
+    }
 }

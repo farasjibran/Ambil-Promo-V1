@@ -46,6 +46,10 @@
                      <a href="{{ route('datapopular')}}">
                          <i class="far fa-check-square"></i>Top Promo Slider</a>
                  </li>
+                 <li class="{{ Request::is('admin/datasuggestion') ? 'active' : '' }}">
+                     <a href="{{ route('datasuggestion')}}">
+                         <i class="far fa-comments" sty></i>Suggestions</a>
+                 </li>
                  @else
                  <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }} has-sub">
                      <a class="js-arrow" href="{{ route('dashboard')}}">
@@ -58,6 +62,10 @@
                  <li class="{{ Request::is('admin/datapopular') ? 'active' : '' }}">
                      <a href="{{ route('datapopular')}}">
                          <i class="far fa-check-square"></i>Top Promo Slider</a>
+                 </li>
+                 <li class="{{ Request::is('admin/datasuggestion') ? 'active' : '' }}">
+                     <a href="{{ route('datasuggestion')}}">
+                         <i class="far fa-comments"></i>Suggestions</a>
                  </li>
                  @endif
              </ul>

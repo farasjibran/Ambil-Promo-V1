@@ -1027,4 +1027,15 @@ jQuery(document).ready(function () {
 
     // END CRUD AJAX TOP PROMO
 
+    // READ DATA CONTACT
+
+    // datatable top promo
+    var datasug = $('#dataSug').DataTable({
+        "processing": true,
+        "ajax": "getsuggestion",
+        "order": []
+    });
+
+    // END READ DATA CONTACT
+
 });

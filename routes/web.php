@@ -34,6 +34,7 @@ Route::get('/admin/datakategori', 'AdminController@viewCat')->name('datakategori
 Route::get('/admin/datarole', 'AdminController@viewRole')->name('datarole');
 Route::get('/admin/datakategoribarang', 'AdminController@viewKtBarang')->name('databarang');
 Route::get('/admin/datapopular', 'AdminController@viewPopular')->name('datapopular');
+Route::get('/admin/datasuggestion', 'AdminController@viewSuggestion')->name('datasuggestion');
 
 // Route CRUD user
 Route::get('/admin/getuser', 'UserController@dataUser')->name('getuser');
@@ -76,3 +77,6 @@ Route::post('/admin/addtoppromo', 'PopularController@addPop')->name('addtoppromo
 Route::post('/admin/getidtoppromo', 'PopularController@getIdPop')->name('getidtoppromo');
 Route::post('/admin/edittoppromo', 'PopularController@editPop')->name('edittoppromo');
 Route::post('/admin/deletetoppromo', 'PopularController@deletePop')->name('deletetoppromo');
+
+// Route READ suggestion
+Route::get('/admin/getsuggestion', 'ContactController@dataSug')->name('getsuggestion');
