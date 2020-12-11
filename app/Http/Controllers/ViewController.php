@@ -30,4 +30,9 @@ class ViewController extends Controller
         $kategoridiskon = Diskon::where('kategori_barang', $idkategori)->paginate(10);
         return view('user.catalogueper', ['category' => $kategori, 'popular' => $popular, 'kategoridiskon' => $kategoridiskon]);
     }
+
+    public function contactUser()
+    {
+        return view('user.contact');
+    }
 }

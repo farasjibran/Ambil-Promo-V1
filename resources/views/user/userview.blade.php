@@ -21,12 +21,14 @@
 
         <!-- Slider -->
 
-        <div class="main_slider" style="background-image:url(https://images.unsplash.com/photo-1604742761578-c09b32ab0863?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHNob3BwaW5nfGVufDB8MHwwfHdoaXRl&ixlib=rb-1.2.1); margin-top: 6%;">
+        <div class="main_slider" style="background-image:url(https://images.unsplash.com/photo-1593698402977-a179ee5193cf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHNob3BwaW5nfGVufDB8MHwwfHdoaXRl&ixlib=rb-1.2.1); margin-top: 6%;">
             <div class="container fill_height">
                 <div class="row align-items-center fill_height">
                     <div class="col">
                         <div class="main_slider_content">
-                            <h1>Get up to 30% Off New Arrivals</h1>
+                            <h1 style="color: black;">
+                                <b style="color: #FFE600;">See</b> And <b style="color: #FFE600;">Search</b> For Promos From <b style="color: #FFE600;">Home</b> Only.
+                            </h1>
                             <div class="red_button shop_now_button" style="background-color: #FFE600;"><a href="{{ url('/catalogue')}}">Show More</a></div>
                         </div>
                     </div>
@@ -111,7 +113,7 @@
 
         <!-- other promo -->
 
-        <div class="new_arrivals" style="padding-bottom: 10%;">
+        <div class="new_arrivals">
             <div class="container">
                 <div class="row" style="padding-bottom: 5%;">
                     <div class="col text-center">
@@ -133,7 +135,7 @@
                                     </div>
                                     <div class="product_info">
                                         <h6 class="product_name">{{$o->title}}</h6>
-                                        <div class="product_price">Sampai {{$o->tanggal_berakhir}}</div>
+                                        <div class="product_price" style="color: #FFE600;">Sampai {{$o->tanggal_berakhir}}</div>
                                     </div>
                                 </div>
                                 <div class="red_button add_to_cart_button" style="width: 98%; margin-left: 1%; background-color: #FFE600;"><a href="{{ url('/detailproduct/'. $o->id)}}">Check Detail</a></div>

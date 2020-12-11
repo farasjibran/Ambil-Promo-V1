@@ -33,6 +33,7 @@ Route::get('/', 'CategorysController@index');
 Route::get('/catalogue', 'ViewController@allPromo');
 Route::get('/detailproduct/{id}', 'ViewController@detailProduct');
 Route::get('/product/{idkategori}', 'ViewController@cataloguePer');
+Route::get('/contact', 'ViewController@contactUser');
 
 Auth::routes();
 

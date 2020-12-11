@@ -33,7 +33,7 @@
                                 <img src="{{ asset('image/' . $d->image)}}" alt="">
                             </div>
                             <div class="product_info">
-                                <h6 class="product_name"><a href="single.html">{{$d->title}}</a></h6>
+                                <h6 class="product_name">{{$d->title}}</h6>
                                 <div class="product_price" style="margin-top: 30%; color: #FFE600;">Sampai {{$d->tanggal_diskon}}</div>
                             </div>
                         </div>

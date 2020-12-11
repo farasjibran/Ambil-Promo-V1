@@ -8,3 +8,4 @@
 <script src="{{ asset('asset/plugins/jquery-ui-1.12.1.custom/jquery-ui.js')}}"></script>
 <script src="{{ asset('asset/js/categories_custom.js')}}"></script>
 <script src="{{ asset('asset/js/single_custom.js')}}"></script>
+<script src="{{ asset('asset/js/contact_custom.js')}}"></script>

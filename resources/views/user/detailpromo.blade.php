@@ -91,7 +91,7 @@
 
         <!-- Best Sellers -->
 
-        <div class="best_sellers" style="padding-bottom: 10%;">
+        <div class="best_sellers">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">

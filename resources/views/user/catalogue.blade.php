@@ -19,7 +19,7 @@
         @extends('parcial.navbar')
         <!-- akhir header -->
 
-        <div class="container product_section_container" style="padding-bottom: 10%;">
+        <div class="container product_section_container">
             <div class="row">
                 <div class="col product_section clearfix">
 
