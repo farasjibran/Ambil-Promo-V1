@@ -1026,4 +1026,5 @@ jQuery(document).ready(function () {
     });
 
     // END CRUD AJAX TOP PROMO
+
 });

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Contact;
 use Illuminate\Http\Request;
 use App\Diskon;
 use App\KategoriBarang;
@@ -34,5 +35,18 @@ class ViewController extends Controller
     public function contactUser()
     {
         return view('user.contact');
+    }
+
+    public function addFeed(Request $request)
+    {
+        if ($_POST["action"] == "Add") {
+            $contact = new Contact();
+            $contact->name = $request->name;
+            $contact->email = $request->email;
+            $contact->website = $request->website;
+            $contact->message = $request->message;
+            $contact->save();
+            echo 'Data Inserted';
+        }
     }
 }

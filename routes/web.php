@@ -14,26 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/shop', 'ViewController@categoryView');
-
-// Route::get('/about', function () {
-//     return view('user/about');
-// });
-
-// Route::get('/contact', function () {
-//     return view('user/contact');
-// });
-
-// Route::get('/about', function () {
-//     return view('user/about');
-// });
-
 // Route User
 Route::get('/', 'CategorysController@index');
 Route::get('/catalogue', 'ViewController@allPromo');
 Route::get('/detailproduct/{id}', 'ViewController@detailProduct');
 Route::get('/product/{idkategori}', 'ViewController@cataloguePer');
 Route::get('/contact', 'ViewController@contactUser');
+Route::post('/addfeedback', 'ViewController@addFeed')->name('addfeedback');
 
 Auth::routes();
 
