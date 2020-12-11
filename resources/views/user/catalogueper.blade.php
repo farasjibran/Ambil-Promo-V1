@@ -15,7 +15,7 @@
                 <!-- Product Sorting -->
 
                 <div class="product_sorting_container product_sorting_container_top">
-                    {{$diskon->links()}}
+                    {{$kategoridiskon->links()}}
                 </div>
 
                 <!-- Product Grid -->
@@ -24,7 +24,9 @@
 
                     <!-- Product 1 -->
 
-                    @foreach($diskon as $d)
+                    @if( count($kategoridiskon) > 0 )
+
+                    @foreach($kategoridiskon as $d)
                     <div class="product-item men" style="margin-bottom: 10px;">
                         <div class="product discount product_filter">
                             <div class="product_image">
@@ -40,8 +42,14 @@
                     @endforeach
                 </div>
 
+                @else
+
+                <h3 style="text-align: center;">No Items In Here!</h3>
+
+                @endif
+
                 <div class="pages d-flex flex-row align-items-center">
-                    {{$diskon->links()}}
+                    {{$kategoridiskon->links()}}
                 </div>
             </div>
         </div>

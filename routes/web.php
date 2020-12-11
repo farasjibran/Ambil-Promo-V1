@@ -16,35 +16,27 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/shop', 'ViewController@categoryView');
 
-// Route::get('/product/{idkategori}', 'ViewController@cataloguePer');
-
 // Route::get('/about', function () {
 //     return view('user/about');
-// });
-
-// Route::get('/shopping_cart', function () {
-//     return view('user/shopping-cart');
-// });
-
-// Route::get('/checkout', function () {
-//     return view('user/checkout');
 // });
 
 // Route::get('/contact', function () {
 //     return view('user/contact');
 // });
 
-
 // Route::get('/about', function () {
 //     return view('user/about');
 // });
 
+// Route User
 Route::get('/', 'CategorysController@index');
 Route::get('/catalogue', 'ViewController@allPromo');
 Route::get('/detailproduct/{id}', 'ViewController@detailProduct');
+Route::get('/product/{idkategori}', 'ViewController@cataloguePer');
 
 Auth::routes();
 
+// Route Admin
 Route::get('/admin', 'UserController@viewLogin');
 // Route View
 Route::get('/admin/dashboard', 'AdminController@dashboardView')->name('dashboard');

@@ -40,9 +40,9 @@
                                 <h5>Promo Category</h5>
                             </div>
                             <ul class="sidebar_categories">
-                                <li class="{{ Request::is('catalogue') ? 'active' : '' }}"><a href="#">All</a></li>
+                                <li class="{{ Request::is('catalogue') ? 'active' : '' }}"><a href="{{ url('/catalogue')}}">All</a></li>
                                 @foreach($category as $c)
-                                <li class="{{ Request::is('/product/'. $c->id) ? 'active' : '' }}"><a href="{{ url('/product/'. $c->id)}}">{{$c->kategori_barang}}</a></li>
+                                <li class="{{ Request::is('product/' . $c->id) ? 'active' : '' }}"><a href="{{ url('/product/'. $c->id)}}">{{$c->kategori_barang}}</a></li>
                                 @endforeach
                             </ul>
                         </div>
